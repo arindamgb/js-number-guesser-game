@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Number Guesser Game</h1>
+
+        <button id="startButton" class="btn btn-primary">Start Game</button>
+        
+        <div class="mt-4">
+            <table class="info-table">
+                <tr>
+                    <th>Number of Chances Left</th>
+                    <td id="chancesLeft"></td>
+                </tr>
+                <tr>
+                    <th>Hint</th>
+                    <td id="hint">Click Start to play!</td>
+                </tr>
+                <tr>
+                    <th>Result</th>
+                    <td id="result" class="result-box"></td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="number" id="userGuess" class="form-control mt-4" placeholder="Enter your guess" disabled>
+        <button id="submitGuess" class="btn btn-success mt-3" disabled>Submit</button>
+    </div>
+
+    <footer class="text-center mt-4">
+        &copy; Arindam G. Biswas
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
